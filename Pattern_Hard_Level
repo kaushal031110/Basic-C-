@@ -1,0 +1,221 @@
+#include <iostream>                 // space then *
+using namespace std;
+int main() {
+    int row, col;
+    int n;
+    cout << " Enter the Input: ";
+    cin >> n;
+    for ( row = 1; row <= n; row++) {
+        for ( col = 1; col <= n - row; col++) {
+            cout << "  ";
+        }
+        for ( col = 1; col <= 2*row -1; col++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+OUTPUT-
+ Enter the Input: 5
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+* * * * * * * * * 
+__________________________________________________________________________
+#include <iostream>                                // space then num
+using namespace std;
+
+int main() {
+    int row, col;
+    int n;
+    cout << "Enter the Input: ";
+    cin >> n;
+    
+    for (row = 1; row <= n; row++) {
+        // Print leading spaces
+        for (col = 1; col <= n - row; col++) {
+            cout << "  ";
+        }
+        // Print increasing numbers
+        for (col = 1; col <= row; col++) {
+            cout << col << " ";
+        }
+        // Print decreasing numbers
+        for (col = row - 1; col >= 1; col--) {
+            cout << col << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+OUTPUT-
+Enter the Input: 5
+        1 
+      1 2 1 
+    1 2 3 2 1 
+  1 2 3 4 3 2 1 
+1 2 3 4 5 4 3 2 1 
+___________________________________________________________________________
+#include <iostream>                 //  space then *
+using namespace std;
+
+int main() {
+    int row, col,n;
+    cout << "Enter the Input: ";
+    cin >> n;
+    for (row = n; row >= 1; row--) {
+        // Print leading spaces
+        for (col = 1; col <= n - row; col++) {
+            cout << "  ";
+        }
+        // Print star
+        for (col = 1; col <=2*row-1; col++) {
+            cout <<"* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+OUTPUT-
+Enter the Input: 5
+* * * * * * * * * 
+  * * * * * * * 
+    * * * * * 
+      * * * 
+        * 
+__________________________________________________________________________
+#include <iostream>                     //* then space then *
+using namespace std;
+
+int main() {
+    int row, col, n;
+    cout << "Enter the Input: ";
+    cin >> n;
+    for (row = n; row >= 1; row--) {
+        // Print the first set of '*'
+        for (col = 1; col <= row; col++)
+            cout << "* ";
+        
+        // Print spaces
+        for (col = 1; col <= 2 * (n - row); col++)
+            cout << "  ";
+        
+        // Print the second set of '*'
+        for (col = 1; col <= row; col++)
+            cout << "* ";
+        
+        cout << endl;
+    }
+    
+    return 0;
+}
+  OUTPUT-
+Enter the Input: 4
+* * * * * * * *
+* * *     * * *
+* *         * *
+*             *
+__________________________________________________________________
+#include <iostream>               // * then space then *
+using namespace std;
+
+int main() {
+    int row, col, n;
+    cout << "Enter the Input: ";
+    cin >> n;
+    for (row = n; row >= 1; row--) {
+        // Print the first set of '*'
+        for (col = 1; col <= row; col++)
+            cout << "* ";
+        
+        // Print spaces
+        for (col = 1; col <= 2 * (n - row); col++)
+            cout << "  ";
+        
+        // Print the second set of '*'
+        for (col = 1; col <= row; col++)
+            cout << "* ";
+        
+        cout << endl;
+    }
+     for (row = 1; row <= n; row++) {
+        // Print the first set of '*'
+        for (col = 1; col <= row; col++)
+            cout << "* ";
+        
+        // Print spaces
+        for (col = 1; col <= 2 * (n - row); col++)
+            cout << "  ";
+        
+        // Print the second set of '*'
+        for (col = 1; col <= row; col++)
+            cout << "* ";
+        
+        cout << endl;
+    }
+    return 0;
+}
+  OUTPUT-
+Enter the Input: 4
+* * * * * * * * 
+* * *     * * * 
+* *         * * 
+*             * 
+*             * 
+* *         * * 
+* * *     * * * 
+* * * * * * * *
+______________________________________________________________________________________
+#include <iostream>                     //* then space then *
+using namespace std;
+
+int main() {
+    int row, col, n;
+    cout << "Enter the Input: ";
+    cin >> n;
+     for (row = 1; row <= n; row++) {
+        // Print the first set of '*'
+        for (col = 1; col <= row; col++)
+            cout << "* ";
+        
+        // Print spaces
+        for (col = 1; col <= 2 * (n - row); col++)
+            cout << "  ";
+        
+        // Print the second set of '*'
+        for (col = 1; col <= row; col++)
+            cout << "* ";
+        
+        cout << endl;
+    }
+     for (row = n-1; row >=1 ; row--) {
+        // Print the first set of '*'
+        for (col = 1; col <= row; col++)
+            cout << "* ";
+        
+        // Print spaces
+        for (col = 1; col <= 2 * (n - row); col++)
+            cout << "  ";
+        
+        // Print the second set of '*'
+        for (col = 1; col <= row; col++)
+            cout << "* ";
+        
+        cout << endl;
+    }
+    return 0;
+}
+OUTPUT-
+Enter the Input: 5
+*                 * 
+* *             * * 
+* * *         * * * 
+* * * *     * * * * 
+* * * * * * * * * * 
+* * * *     * * * * 
+* * *         * * *
+* *             * * 
+*                 *
+___________________________________________________________________________________________
