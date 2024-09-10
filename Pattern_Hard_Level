@@ -219,3 +219,42 @@ Enter the Input: 5
 * *             * * 
 *                 *
 ___________________________________________________________________________________________
+#include <iostream>
+using namespace std;
+int main(){
+int row, col;
+int n;
+cout<<"Input the num: ";
+cin>>n;
+   for(row=1;row<=n;row++){
+    // space print
+    for(col=1;col<=n-row;col++){
+        cout<<" ";
+    }
+    for(col=1;col<=row;col++){
+      cout<<"*"<<" ";
+    }
+      cout<<endl;
+       }
+    for(row=1;row<=n-1;row++){
+    // space print
+    for(col=1;col<=row;col++){
+        cout<<" ";
+    }
+    for(col=1;col<=n-row;col++){
+      cout<<"*"<<" ";
+    }
+      cout<<endl;
+       }
+       return 0;
+    }
+OUTPUT-
+Input the num: 4
+   *
+  * *
+ * * *
+* * * *
+ * * *
+  * *
+   *
+_______________________________________________________________________________
